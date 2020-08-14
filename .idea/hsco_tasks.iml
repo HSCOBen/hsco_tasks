@@ -11,5 +11,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_magick (v4.10.1, ruby-2.7.1-p83) [gem]" level="application" />
   </component>
 </module>
