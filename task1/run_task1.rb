@@ -1,12 +1,12 @@
 require "mini_magick"
 
-INPUT_IMAGE_PATH = "input/5f217ff5effd2.jpg"
+def update_color_in_image(input_image_path, hex_color_to_find, hex_color_to_change_to, color_name)
+  MiniMagick::Tool::Convert.new do |convert|
+    convert << input_image_path
+    convert.merge! ["-fx","'r < (230/255) ? #" + hex_color_to_change_to + " : u'"]
+    convert << color_name + ".jpg"
+  end
+end
 
-image = MiniMagick::Image.open(INPUT_IMAGE_PATH)
-image_pixels = image.get_pixels
+update_color_in_image("websitetemplate.jpg", "", "7aa36a", "Pistachio")
 
-(1..image.width).each { |x|
-  (1..image.height).each { |y|
-    puts "At pixel (" + x.to_s + "," + y.to_s + "), RGB Color: " + image_pixels[x][y].to_s
-  }
-}
