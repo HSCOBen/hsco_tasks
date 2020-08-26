@@ -1,7 +1,62 @@
 require "mini_magick"
 
-MiniMagick::Tool::Convert.new do |convert|
-  convert << "Websitetemplate.tif"
-  convert.merge! ["-fx","'r < (230/255) ? #0000FF : u'"]
-  convert << "Websitetemplate2.tif"
+def update_color_in_image(input_image_path, hex_color_to_change, color_name)
+  MiniMagick::Tool::Convert.new do |convert|
+    convert << input_image_path
+    convert.merge! ["-fx","'r < (#FFE6FF) ? #" + hex_color_to_change + " : u'"]
+    convert << color_name + ".tif"
+  end
 end
+update_color_in_image("websitetemplate.tif", "7aa36a", "Pistachio")
+update_color_in_image("websitetemplate.tif", "5e9087", "Agate")
+update_color_in_image("websitetemplate.tif", "9279b5", "Amethyst")
+update_color_in_image("websitetemplate.tif", "a8c8c0", "Aspen")
+update_color_in_image("websitetemplate.tif", "594064", "Aubergine")
+update_color_in_image("websitetemplate.tif", "b15485", "Azalea")
+update_color_in_image("websitetemplate.tif", "67789b", "Azurite")
+update_color_in_image("websitetemplate.tif", "e49fbf", "Begonia")
+update_color_in_image("websitetemplate.tif", "ca8184", "Berry")
+update_color_in_image("websitetemplate.tif", "3b5790", "BlueJay")
+update_color_in_image("websitetemplate.tif", "9ec5d4", "Bluebell")
+update_color_in_image("websitetemplate.tif", "ebc9c7", "Blush")
+update_color_in_image("websitetemplate.tif", "c0b166", "Brass")
+update_color_in_image("websitetemplate.tif", "8cbdd1", "Breeze")
+update_color_in_image("websitetemplate.tif", "e5b4c2", "Carnation")
+update_color_in_image("websitetemplate.tif", "ad8d9c", "Celestial")
+update_color_in_image("websitetemplate.tif", "3879bc", "Cerulean")
+update_color_in_image("websitetemplate.tif", "67686a", "Charcoal")
+update_color_in_image("websitetemplate.tif", "89a3c8", "Cornflower")
+update_color_in_image("websitetemplate.tif", "da6f75", "Dahlia")
+update_color_in_image("websitetemplate.tif", "db8673", "DesertRose")
+update_color_in_image("websitetemplate.tif", "7b7e91", "Dove")
+update_color_in_image("websitetemplate.tif", "7d97ac", "Dusk")
+update_color_in_image("websitetemplate.tif", "136a62", "Emerald")
+update_color_in_image("websitetemplate.tif", "9eaca7", "Eucalpytus")
+update_color_in_image("websitetemplate.tif", "c43e3e", "Geranium")
+update_color_in_image("websitetemplate.tif", "b5773e", "Ginger")
+update_color_in_image("websitetemplate.tif", "c0dddc", "GlacierBlue")
+update_color_in_image("websitetemplate.tif", "b39b4e", "Gold")
+update_color_in_image("websitetemplate.tif", "ccaf73", "GoldenCanyon")
+update_color_in_image("websitetemplate.tif", "ed9b85", "Grapefruit")
+update_color_in_image("websitetemplate.tif", "80b74f", "Greenery")
+update_color_in_image("websitetemplate.tif", "77756c", "Greige")
+update_color_in_image("websitetemplate.tif", "ddc47b", "Honey")
+update_color_in_image("websitetemplate.tif", "4f5278", "Indigo")
+update_color_in_image("websitetemplate.tif", "4d4c5f", "Ink")
+update_color_in_image("websitetemplate.tif", "29968c", "Jade")
+update_color_in_image("websitetemplate.tif", "807e4b", "Jungle")
+update_color_in_image("websitetemplate.tif", "004c57", "Juniper")
+update_color_in_image("websitetemplate.tif", "526c4e", "Kale")
+update_color_in_image("websitetemplate.tif", "55acb9", "Lagoon")
+update_color_in_image("websitetemplate.tif", "44697a", "Lake")
+update_color_in_image("websitetemplate.tif", "c3b2d6", "Lilac")
+update_color_in_image("websitetemplate.tif", "bcd445", "Lime")
+update_color_in_image("websitetemplate.tif", "e8756d", "LivingCoral")
+update_color_in_image("websitetemplate.tif", "bb9851", "Marigold")
+update_color_in_image("websitetemplate.tif", "7193a6", "Marine")
+update_color_in_image("websitetemplate.tif", "4e607d", "Midnight")
+update_color_in_image("websitetemplate.tif", "b8ddcc", "Mint")
+update_color_in_image("websitetemplate.tif", "856072", "Mulberry")
+update_color_in_image("websitetemplate.tif", "f4d0ac", "Nectar")
+update_color_in_image("websitetemplate.tif", "9f794a", "Ochre")
+update_color_in_image("websitetemplate.tif", "798263", "Olive")

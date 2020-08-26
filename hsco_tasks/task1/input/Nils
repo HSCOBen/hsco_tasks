@@ -9,3 +9,16 @@ image_pixels = image.get_pixels
     puts "At pixel (" + x.to_s + "," + y.to_s + "), RGB Color: " + image_pixels[x][y].to_s
   }
 }
+update_color_in_image("websitetemplate.tif", "" ,"5e9087", "Agate")
+update_color_in_image("websitetemplate.tif", "" ,"9279b5", "Amethyst")
+update_color_in_image("websitetemplate.tif", "" ,"a8c8c0", "Aspen")
+update_color_in_image("websitetemplate.tif", "" ,"594064", "Aubergine")
+update_color_in_image("websitetemplate.tif", "" ,"b15485", "Azalea")
+update_color_in_image("websitetemplate.tif", "" ,"67789b", "Azurite")
+update_color_in_image("websitetemplate.tif", "" ,"e49fbf", "Begonia")
+update_color_in_image("websitetemplate.tif", "" ,"ca8184", "Berry")
+update_color_in_image("websitetemplate.tif", "" ,"3b5790", "BlueJay")
+update_color_in_image("websitetemplate.tif", "" ,"9ec5d4", "Bluebell")
+update_color_in_image("websitetemplate.tif", "" ,"ebc9c7", "Blush")
+update_color_in_image("websitetemplate.tif", "" ,"c0b166", "Brass")
+update_color_in_image("websitetemplate.tif", "" ,"8cbdd1", "Breeze")
